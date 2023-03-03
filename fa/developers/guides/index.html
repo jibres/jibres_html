@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html
+    lang="fa"
+    dir="rtl"
+    translate="no"
+    prefix="og: http://ogp.me/ns#"
+    data-desktop
+>
+    <head>
+        <meta charset="UTF-8" />
+        <base href="https://developers.jibres.com" />
+        <title>راهنمای رابط برنامه‌نویسی جیبرس</title>
+        <meta
+            content="یادگیری درباره ورودی‌ها و خروجی‌های رابط برنامه‌نویسی."
+            name="description"
+        />
+        <!--[if IE
+            ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+        /><![endif]-->
+        <meta
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5"
+            name="viewport"
+        />
+        <meta content="https://developers.jibres.com/fa" name="site:root" />
+        <meta content="summary" name="twitter:card" />
+        <meta content="راهنمای رابط برنامه‌نویسی جیبرس" name="twitter:title" />
+        <meta
+            content="یادگیری درباره ورودی‌ها و خروجی‌های رابط برنامه‌نویسی."
+            name="twitter:description"
+        />
+        <meta
+            content="https://cdn.jibres.com/logo/icon/png/Jibres-Logo-icon-500.png?v=2"
+            name="twitter:image"
+        />
+        <meta content="@jibres_com" name="twitter:site" />
+        <meta content="@jibres_com" name="twitter:creator" />
+        <meta
+            content="https://developers.jibres.com/fa/guides"
+            name="twitter:url"
+        />
+        <meta content="website" property="og:type" />
+        <meta content="راهنمای رابط برنامه‌نویسی جیبرس" property="og:title" />
+        <meta
+            content="یادگیری درباره ورودی‌ها و خروجی‌های رابط برنامه‌نویسی."
+            property="og:description"
+        />
+        <meta
+            content="https://cdn.jibres.com/logo/icon/png/Jibres-Logo-icon-500.png?v=2"
+            property="og:image"
+        />
+        <meta
+            content="https://developers.jibres.com/fa/guides"
+            property="og:url"
+        />
+        <meta content="جیبرس" property="og:site_name" />
+        <meta content="fa" property="og:locale" />
+        <meta content="https://jibres.com/fa/" name="jibres:sitelang" />
+        <meta content="https://core.jibres.com/" name="jibres:core" />
+        <meta content="https://api.jibres.com/" name="jibres:api" />
+        <meta content="https://cdn.jibres.com/" name="jibres:cdn" />
+        <meta content="index, follow" name="robots" />
+        <meta content="UA-130946685-1" name="gtag" />
+        <meta content="yes" name="mobile-web-app-capable" />
+        <meta content="yes" name="apple-touch-fullscreen" />
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+        <meta content="#c80a5a" name="theme-color" />
+        <meta content="#c80a5a" name="msapplication-TileColor" />
+        <meta content="جیبرس" name="application-name" />
+        <meta content="جیبرس" name="apple-mobile-web-app-title" />
+        <meta content="Jibres" name="generator" />
+        <link
+            href="https://cdn.jibres.com/favicons/favicon.ico?j=2"
+            rel="shortcut icon"
+        />
+        <link
+            href="https://cdn.jibres.com/favicons/apple-touch-icon.png?j=2"
+            sizes="180x180"
+            rel="apple-touch-icon"
+        />
+        <link
+            href="https://cdn.jibres.com/favicons/favicon-32x32.png?j=2"
+            sizes="32x32"
+            type="image/png"
+            rel="icon"
+        />
+        <link
+            href="https://cdn.jibres.com/favicons/favicon-16x16.png?j=2"
+            sizes="16x16"
+            type="image/png"
+            rel="icon"
+        />
+        <link
+            href="https://cdn.jibres.com/favicons/safari-pinned-tab.svg?j=2"
+            rel="mask-icon"
+        />
+        <link
+            href="https://cdn.jibres.com/logo/en/svg/Jibres-Logo-en.svg?j=2"
+            rel="apple-touch-startup-image"
+        />
+        <link
+            href="https://developers.jibres.com/fa/manifest.webmanifest"
+            rel="manifest"
+        />
+        <meta
+            content="https://cdn.jibres.com/favicons/browserconfig.xml?j=2"
+            name="msapplication-config"
+        />
+        <link rel="canonical" href="https://developers.jibres.ir/guides" />
+        <link href="https://jibres.com/team" rel="author" />
+        <link href="https://cdn.jibres.com" rel="preconnect" />
+        <link
+            href="https://cdn.jibres.com/css/siftal-v3.min.css?1677088095"
+            rel="preload stylesheet"
+            as="style"
+        />
+    </head>
+    <body
+        data-subdomain="developers"
+        data-env="Jibres"
+        data-in="developers"
+        data-page="guides"
+        data-preload
+    >
+        <header id="pageHeader" data-xhr="pageHeader" data-scroll>
+            <div class="desktop">
+                <div id="jibresHeader">
+                    <div class="avand">
+                        <div class="f">
+                            <div class="cauto">
+                                <a class="logo" href="https://jibres.com/fa/"
+                                    ><img
+                                        src="https://cdn.jibres.com/logo/fa/svg/Jibres-Logo-fa.svg"
+                                        alt="لوگوی جیبرس"
+                                    />
+                                    <h1>جیبرس</h1></a
+                                >
+                            </div>
+                            <nav class="c s0"></nav>
+                            <nav class="cauto">
+                                <a href="https://developers.jibres.com/fa/"
+                                    >صفحه نخست توسعه‌دهندگان</a
+                                >
+                                <a
+                                    href="https://developers.jibres.com/fa/libraries"
+                                    >کتابخانه‌ها</a
+                                >
+                                <a
+                                    href="https://developers.jibres.com/fa/guides"
+                                    >راهنمایی‌ها</a
+                                >
+                                <a href="https://developers.jibres.com/fa/docs"
+                                    >مستندات</a
+                                >
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pwa">
+                <a
+                    class="square minor back"
+                    href="https://developers.jibres.com/fa"
+                    ><svg
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M8 16a.999.999 0 01-.707-1.707L11.586 10 7.293 5.707a.999.999 0 111.414-1.414l5 5a.999.999 0 010 1.414l-5 5A.997.997 0 018 16z"
+                            fill="#5C5F62"
+                        /></svg
+                ></a>
+                <div class="title">راهنمای رابط برنامه‌نویسی جیبرس</div>
+            </div>
+        </header>
+        <div id="pageCenter" data-xhr="pageCenter">
+            <aside id="sidebar" data-xhr="sidebar"></aside>
+            <main id="pageContent" data-xhr="pageContent">
+                <section id="jibresPageTitle" class="color2">
+                    <div class="avand">
+                        <h2>
+                            یادگیری درباره ورودی‌ها و خروجی‌های رابط
+                            برنامه‌نویسی.
+                        </h2>
+                        <p>
+                            با راهنمایی های مستقیم و سرراست ما کار خودتون رو با
+                            رابط برنامه‌نویسی جیبرس شروع کنید.
+                        </p>
+                    </div>
+                </section>
+                <div class="avand pt-4">
+                    <div class="box mb-12-f">
+                        <header><h2>مقدمه</h2></header>
+                        <div class="body" id="intro">
+                            <p class="leading-relaxed mb-4">
+                                با ای‌پی‌آی ما شما می‌توانید تمام زیرساخت را از
+                                طریق واسط برنامه‌نویسی استاندارد کنترل کنید. شما
+                                می‌توانید با استفاده از واسط برنامه‌نویسی تمامی
+                                عملیات‌های موجود در داشبورد خود را انجام دهید.
+                            </p>
+                            <p class="leading-relaxed mb-4">
+                                ای‌پی‌آی ما RESTful API طراحی شده است و تمامی
+                                پاسخ‌ها در قالب جیسون قرار دارند. اگر شما ثبت
+                                نام کرده اید، می‌توانید کلید ای‌پی‌آی خود را از
+                                صفحه «حساب من» دریافت کنید.
+                                <a
+                                    target="_blank"
+                                    href="https://developers.jibres.com/fa/account/api"
+                                    >برو به حساب من.</a
+                                >
+                            </p>
+                            <h3 class="text-lg font-bold">
+                                مخاطبان رابط برنامه‌نویسی
+                            </h3>
+                            <p class="leading-relaxed mb-4">
+                                اکثر مردم تنظیمات خود را که در داشبورد وب، ساخته
+                                شده با استفاده از این ای‌پی‌آی ها، مدیریت
+                                می‌کنند. عملا هر چیزی که می‌توانید در داشبورد
+                                مشتری انجام دهید ممکن است از طریق ای‌پی‌آی انجام
+                                شود.
+                            </p>
+                            <p class="leading-relaxed mb-4">
+                                ما برای ای‌پی‌آی‌های عمومی، سه مخاطب در ذهن
+                                داریم.
+                            </p>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>همکاران</li>
+                                <li>مشتریان</li>
+                                <li>توسعه‌دهندگان</li>
+                            </ul>
+                            <p class="leading-relaxed">
+                                مستندات ای‌پی‌آی با توضیحات مقدماتی درباره طراحی
+                                و تکنولوژی‌های پیاده‌سازی شروع شده است. در ادامه
+                                به دنبال اطلاعات بیشتر برای هر عملیات در نقطه
+                                پایان آن بیشتر بخوانید.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box mb-12-f">
+                        <header><h2>نقطه پایان</h2></header>
+                        <div class="body" id="endpoints">
+                            <p class="leading-relaxed mb-4">
+                                ای‌پی‌آی با ایجاد درخواست اچ‌تی‌تی‌پی‌اس به یک
+                                نشانی اینترنتی آغاز شده و متود‌های GET، POST،
+                                PUT، PATCH، HEAD و DELETE نحوه تعامل شما با
+                                اطلاعات موجود را تعیین می‌کند. تمامی آدرس‌ها
+                                تنها از طریق اچ‌تی‌تی‌پی‌اس قابل دسترسی هستند.
+                            </p>
+                            <p class="leading-relaxed mb-4">
+                                همه چیز (روش ها، پارامترها، و غیره) به شماره
+                                نسخه ثابت شده است، و هر ارتباط باید شامل یک نسخه
+                                باشد.
+                            </p>
+                            <p class="leading-relaxed mb-2 font-bold">
+                                نقطه اتصال هر ای‌پی‌آی در ابتدای مستندات آن ذکر
+                                شده است
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box mb-12-f">
+                        <header><h2>درخواست‌ها</h2></header>
+                        <div class="body" id="requests">
+                            <p class="leading-relaxed mb-4">
+                                هر درخواستی که در اچ‌تی‌تی‌پی قابل اجرا هست به
+                                سادگی می‌تواند با درخواست نشانی اینترنتی صحیح از
+                                ای‌پی‌آی ارتباط برقرار کند. درخواست‌ها باید با
+                                استفاده از پروتکل اچ‌تی‌تی‌پی‌اس ساخته شوند تا
+                                ترافیک رمزگذاری شوند. این رابط به روش‌های مختلف
+                                بسته به نوع درخواست کاربر پاسخ می‌دهد.
+                            </p>
+                            <table class="tbl1 v6 mB0-f responsive">
+                                <thead>
+                                    <tr>
+                                        <th>متود</th>
+                                        <th>استفاده</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>GET</th>
+                                        <td>
+                                            <p>
+                                                برای دریافت ساده اطلاعات در مورد
+                                                چیزی، باید از روش GET استفاده
+                                                کنید. اطلاعات درخواستی شما به
+                                                صورت یک جیسون به دست شما خواهد
+                                                رسید.
+                                            </p>
+                                            <p>
+                                                مقادیر تعریف شده توسط شی جیسون
+                                                می‌تواند برای ایجاد درخواست‌های
+                                                اضافی استفاده شود. هر درخواستی
+                                                که با استفاده از روش GET
+                                                فراخوانی می‌شوند تنها خواندنی
+                                                است و بر روی هیچ یک از اشیای
+                                                مورد نظر تاثیر نمی گذارد.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>POST</th>
+                                        <td>
+                                            <p>
+                                                برای ایجاد یک شی جدید، درخواست
+                                                شما باید با روش POST ارسال شود.
+                                            </p>
+                                            <p>
+                                                درخواست POST شامل تمام مقادیر
+                                                لازم برای ایجاد یک شی جدید
+                                                می‌باشد. وقتی می‌خواهید یک شی
+                                                جدید ایجاد کنید، یک درخواست POST
+                                                را به نقطه پایانی هدف ارسال
+                                                کنید.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>DELETE</th>
+                                        <td>
+                                            <p>
+                                                برای از بین بردن یک منبع و حذف
+                                                آن از حساب و ناحیه کاربری خود،
+                                                باید روش DELETE استفاده شود. اگر
+                                                شی مشخص شده یافت شد، حذف خواهد
+                                                شد. اگر آن شی پیدا نشد، عملیات
+                                                پاسخی را نشان می‌دهد که شی یافت
+                                                نشد.
+                                            </p>
+                                            <p>
+                                                این خودکفایی به این معنی است که
+                                                شما مجبور نیستید برای دسترسی به
+                                                منابع قبل از صدور فرمان حذف،
+                                                بررسی کنید، حالت نهایی بدون در
+                                                نظر گرفتن وجود آن، همان خواهد
+                                                بود.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>PUT</th>
+                                        <td>
+                                            <p>
+                                                برای به‌روزرسانی اطلاعات مربوط
+                                                به یک منبع در حسابتان، روش PUT
+                                                در دسترس است.
+                                            </p>
+                                            <p>
+                                                مانند روش DELETE، روش PUT خودکفا
+                                                است. در این روش وضعیت هدف با
+                                                توجه به مقادیر جدید ارائه شده و
+                                                بدون در نظر گرفتن مقادیر جاری آن
+                                                تنظیم می‌شوند. درخواست‌ها با
+                                                استفاده از روش PUT نیازی به
+                                                بررسی ویژگی‌های فعلی شی ندارند.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>PATCH</th>
+                                        <td>
+                                            <p>
+                                                برای به‌روزرسانی بخشی از اطلاعات
+                                                مربوط به یک منبع در حسابتان، روش
+                                                PATCH در دسترس است.
+                                            </p>
+                                            <p>
+                                                روش PUT و روش PATCH در نوع
+                                                استفاده یکسان هستند.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>HEAD</th>
+                                        <td>
+                                            <p>
+                                                سرانجام، برای بازیابی اطلاعات
+                                                هدر، باید از HEAD استفاده کنید
+                                                تا هدرها را دریافت کنید. این فقط
+                                                بازگشت هدر چیزی است که با
+                                                درخواست GET دریافت می‌شود.
+                                            </p>
+                                            <p>
+                                                هدرهای پاسخ حاوی اطلاعات مفید در
+                                                مورد دسترسی ای‌پی‌آی شما و
+                                                نتایجی است که برای درخواست شما
+                                                در دسترس هستند.
+                                            </p>
+                                            <p>
+                                                به عنوان مثال، هدر حاوی مقادیر
+                                                فعلی میزان و مقدار زمان موجود تا
+                                                زمان محدود شدن مجاز است. همچنین
+                                                شامل معیارهای مربوط به تعداد کل
+                                                اشیاء پیدا شده، اطلاعات صفحه
+                                                بندی و طول کل محتوای است.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box mb-12-f">
+                        <header><h2>پاسخ‌ها</h2></header>
+                        <div class="body" id="responses">
+                            <p class="leading-relaxed mb-2">
+                                همه پاسخ‌ها در قالب جیسون قرار دارند.
+                            </p>
+                            <ul class="list-disc list-inside list mb-4">
+                                <li>
+                                    داده‌های درخواست شده در قسمت
+                                    <code>result</code> قرار دارند.
+                                </li>
+                                <li>
+                                    اگر شما درخواست پاسخی از سرور داشتید این
+                                    پاسخ حتما در قسمت <code>result</code> قرار
+                                    دارد.
+                                </li>
+                                <li>
+                                    ما همچنین قسمت <code>ok</code> و نیز
+                                    آرایه‌ای از <code>msg</code> را در پاسخ سرور
+                                    قرار می‌دهیم.
+                                </li>
+                                <li>
+                                    بعضی از پاسخ‌ها می‌توانند اطلاعات اضافی خود
+                                    را در قسمت <code>meta</code> به شما اعلام
+                                    کنند
+                                </li>
+                                <li>
+                                    هر شی از msg شامل حداقل دو قسمت
+                                    <code>type</code> و <code>text</code> است
+                                </li>
+                            </ul>
+                            <h3 class="text-lg font-bold leading-relaxed">
+                                پاسخ موفقیت آمیز <small>مثال</small>
+                            </h3>
+                            <samp class="mb-6">
+                                { "ok": true, "result": { "abc": 123, "def": 456
+                                } "msg": [ { "type": "info", "text": "How are
+                                you!" } ] }
+                            </samp>
+                            <h3 class="text-lg font-bold leading-relaxed">
+                                پاسخ خطا <small>مثال</small>
+                            </h3>
+                            <samp class="mb-6">
+                                { "ok": false, "msg": [ { "type": "error",
+                                "text": "A verification code was sended to user"
+                                } ] }
+                            </samp>
+                            <h3 class="text-lg font-bold leading-relaxed">
+                                کدهای پاسخ اچ‌تی‌تی‌پی
+                            </h3>
+                            <p class="leading-relaxed mb-2">
+                                وضعیت یک پاسخ را می‌توان از کد وضعیت اچ‌تی‌تی‌پی
+                                دریافت کرد.
+                            </p>
+                            <div class="tblBox">
+                                <table class="tbl1 v6 mB0-f">
+                                    <thead>
+                                        <tr>
+                                            <th>کد</th>
+                                            <th>وضعیت</th>
+                                            <th>توضیح</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>200</th>
+                                            <td>OK</td>
+                                            <td>درخواست موفق بود</td>
+                                        </tr>
+                                        <tr>
+                                            <th>304</th>
+                                            <td>Not Modified</td>
+                                            <td>درخواست موفق بود</td>
+                                        </tr>
+                                        <tr>
+                                            <th>400</th>
+                                            <td>Bad Request</td>
+                                            <td>درخواست نادرست بود</td>
+                                        </tr>
+                                        <tr>
+                                            <th>401</th>
+                                            <td>Unauthorized</td>
+                                            <td>
+                                                کاربر دسترسی لازم را برای انجام
+                                                این کار ندارد
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>403</th>
+                                            <td>Forbidden</td>
+                                            <td>
+                                                درخواست مجوز لازم را برای اجرا
+                                                ندارد
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>404</th>
+                                            <td>Not Found</td>
+                                            <td>آدرس اشتباه</td>
+                                        </tr>
+                                        <tr>
+                                            <th>429</th>
+                                            <td>Too many requests</td>
+                                            <td>
+                                                کاربر از محدوده مجاز عبور کرده
+                                                است
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>405</th>
+                                            <td>Method Not Allowed</td>
+                                            <td>
+                                                روش اچ‌تی‌تی‌پی نادرست ارائه شده
+                                                است
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>415</th>
+                                            <td>Unsupported Media Type</td>
+                                            <td>پاسخ جیسون معتبر نیست</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer id="pageFooter" data-xhr="pageFooter"></footer>
+        <div class="js">
+            <script
+                async
+                src="https://cdn.jibres.com/js/jibres.min.js?1677088097"
+            ></script>
+        </div>
+    </body>
+</html>
